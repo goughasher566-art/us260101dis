@@ -1,0 +1,18 @@
+{
+  "name": "ai-stock-analysis-platform",
+  "version": "1.0.0",
+  "description": "AI Stock Analysis Platform Landing Page",
+  "main": "stock-analysis.html",
+  "scripts": {
+    "dev": "npx http-server -p 8000",
+    "start": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "stock",
+    "analysis",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

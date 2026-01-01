@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 隐藏滚动条但保持滚动功能 */
+html {
+	overflow-x: hidden;
+	width: 100%;
+	scrollbar-width: none; /* Firefox - 隐藏滚动条 */
+	-ms-overflow-style: none; /* IE and Edge - 隐藏滚动条 */
+}
+
+/* 隐藏Webkit浏览器的滚动条 */
+html::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
+	width: 0;
+	height: 0;
+	background: transparent;
+}
+
+body{
+	text-align: center;
+	overflow-x: hidden; /* 隐藏横向滚动条 */
+	width: 100%;
+	max-width: 100vw; /* 确保不超出视口宽度 */
+	margin: 0;
+	padding: 0;
+}
+section{
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+.c1 {
+	font-size: 35px;
+	font-weight: bold;
+}
+.c2 {
+	font-size: 45px;
+}
+.c2 .c3 {
+	color: #f00;
+	font-size: 45px;
+	font-weight: bold;
+}
+.c4 {
+	margin-top: 5%;
+	font-size: 28px;
+}
+.c5 {
+	color: red;
+}
+.c6 {
+	color: #01ffa2;
+}
+
+.v7 {
+	background: rgb(9, 76, 137);
+	border-radius: 12px;
+	padding: 32px 18px;
+	max-width: 680px;
+	margin: 60px auto;
+}
+.v8 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 18px;
+}
+.v8 .v9 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.v10 {
+	margin-bottom: 16px;
+	width: 500px;
+}
+.v11 {
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+.v12 {
+	background: #eee;
+	border-radius: 8px;
+	height: 16px;
+}
+.v13 {
+	width: 0%;
+	background: #00dcf4;
+	height: 100%;
+	border-radius: 8px;
+}
+
+/* 结果框 */
+.v14 {
+	background: rgb(9, 76, 137);
+	border-radius: 12px;
+	padding: 40px 24px;
+	margin: 26px auto;
+	max-width: 750px;
+}
+.v15 .v9 {
+	font-size: 42px;
+	font-weight: bold;
+	color: #3fffb4;
+}
+#tips-code {
+	color: #15a223;
+}
+.v16 .v17 {
+	font-size: 30px;
+	margin-bottom: 24px;
+	line-height: 1.6;
+}
+.v18 {
+	font-size: 30px;
+	margin-bottom: 18px;
+}
+
+/* 按钮 */
+.v19 {
+	background: #15a223;
+	color: #fff;
+	padding: 12px 10px;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 30px;
+}
+.v20{
+	position: relative;
+	max-width: 720px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.c21{
+	position: absolute;
+	width: 720px;
+	text-align: center;
+	top: 1%;
+}
+
+
+.v22{
+	position: absolute;
+	width: 720px;
+	text-align: center;
+	top: 68%;
+}
+.v22 img{
+	padding: 20px;
+}
+.v23{
+	position: absolute;
+    width: 720px;
+    text-align: center;
+    top: 55.6%;
+    color: white;
+    line-height: 48px;
+    font-weight: 800;
+    font-size: 29px;
+}
+.c24{
+	position: absolute;
+	width: 720px;
+	text-align: center;
+	top: 34%;
+}
+.c24 img{
+	padding: 20px;
+}
+
+.v25{
+	position: absolute;
+	width: 720px;
+	text-align: center;
+	top: 37%;
+}
+
+
+.v26 {
+    width: 78%;
+    height: 8%;
+    border-radius: 1rem;
+    border: 3px solid rgba(78, 147, 234, 1);
+    margin-top: 1rem;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    font-size: 26px;
+    background: rgb(46 56 73);
+    color: white;
+}
+
+.v27 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	z-index: 99999;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.v28 {
+	padding: 30px;
+	line-height: 1.5;
+	word-break: break-word;
+	overflow: auto;
+	font-size: 35px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	max-width: 750px;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+.v29{
+	-webkit-animation: pulse2 1s linear infinite;
+	-moz-animation: pulse2 1s linear infinite;
+	animation: pulse2 1s linear infinite;
+}
+@-webkit-keyframes pulse2 {
+	0% {
+	  -webkit-transform: scale(0.9);
+	}
+	50% {
+	  -webkit-transform: scale(1);
+	}
+	100% {
+	  -webkit-transform: scale(0.9);
+	}
+}
+@keyframes pulse2 {
+	0% {
+	  -webkit-transform: scale(0.9);
+	}
+	50% {
+	  -webkit-transform: scale(1);
+	}
+	100% {
+	  -webkit-transform: scale(0.9);
+	}
+}
+
+.v30{
+	position: fixed;
+	display: none;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+.v35{
+	display: block;
+}
+
+/* 隐藏右侧悬浮标记和小图标 */
+.imt-fb-container,
+.imt-fb-btn,
+.imt-manga-button,
+.imt-fb-side,
+.imt-fb-reward,
+.immersive-translate-popup,
+div[id*="immersive"],
+div[class*="imt-fb"],
+div[class*="float-ball"],
+div[style*="position: fixed"][style*="right"] {
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
